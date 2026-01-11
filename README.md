@@ -83,6 +83,52 @@ docker run --name ZABBIX_WEB_SERVICE \
 
 <img width="552" height="288" alt="image" src="https://github.com/user-attachments/assets/e2abbd82-8024-4e96-ba2a-25eebd3a8dd5" />
 
+<br><br/>
+DeepSeek показал пример настройки ZABBIX_WEB_SERVICE:
+<br><br/>
+docker run --name ZABBIX_WEB_SERVICE \
+  -e DB_SERVER_HOST="POSTGRES_DB" \
+  -e POSTGRES_USER="IlyaS" \
+  -e POSTGRES_PASSWORD="password" \
+  -e POSTGRES_DB="zabbix-postgres" \
+  -e ZBX_SERVER_HOST="ZABBIX_SERVER_POSTGRES" \
+  -e ZBX_SERVER_PORT=10051 \
+  -e PHP_TZ="Europe/Moscow" \
+  -p 8092:8080 \
+  --network=zabbix-net \
+  -d zabbix/zabbix-web-nginx-pgsql:alpine-7.4-latest
+
+<br><br/>
+<br><br/>
+После этого в Zabbix выглядит так:
+<br><br/>
+<img width="555" height="288" alt="image" src="https://github.com/user-attachments/assets/531c4e39-757e-4260-93a3-ff629f4c27e0" />
+<br><br/>
+Документация - https://www.zabbix.com/documentation/current/en/manual/installation/containers#environment-variables
+
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
 
 Zabbix на систему
 
