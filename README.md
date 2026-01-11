@@ -78,6 +78,9 @@ docker run --name ZABBIX_WEB_SERVICE \
 
 <img width="1154" height="122" alt="image" src="https://github.com/user-attachments/assets/0183106d-e721-4947-b9cf-fa37bc7bf418" />
 
+<br><br/>
+<br><br/>
+
 <img width="552" height="288" alt="image" src="https://github.com/user-attachments/assets/e2abbd82-8024-4e96-ba2a-25eebd3a8dd5" />
 
 
